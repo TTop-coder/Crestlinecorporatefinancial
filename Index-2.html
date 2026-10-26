@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crestline Corporate Finance</title>
+
+<style>
+
+:root {
+
+  --navy: #101d35;
+
+  --gold: #d5ad62;
+
+  --white: #ffffff;
+
+  --light: #f5f6f8;
+
+  --text: #263247;
+
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  color: var(--text);
+
+  line-height: 1.6;
+
+}
+
+header {
+
+  background: var(--navy);
+
+  color: white;
+
+  padding: 20px 6%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+}
+
+.brand { font-size: 19px; font-weight: bold; }
+
+.brand span { color: var(--gold); }
+
+nav { display: flex; flex-wrap: wrap; gap: 16px; }
+
+nav a { color: white; text-decoration: none; font-size: 13px; }
+
+nav a:hover { color: var(--gold); }
+
+.hero {
+
+  background: linear-gradient(135deg, #101d35, #243c60);
+
+  color: white;
+
+  padding: 90px 7%;
+
+}
+
+.hero h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.15; max-width: 700px; }
+
+.hero p { max-width: 580px; color: #e1e6ef; }
+
+.eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-size: 12px; }
+
+.button {
+
+  display: inline-block;
+
+  background: var(--gold);
+
+  color: var(--navy);
+
+  padding: 13px 22px;
+
+  border-radius: 4px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  border: none;
+
+  cursor: pointer;
+
+}
+
+section { padding: 65px 7%; }
+
+h2 { color: var(--navy); font-size: 30px; }
+
+.intro { max-width: 720px; }
+
+.cards {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+
+  margin-top: 28px;
+
+}
+
+.card {
+
+  background: white;
+
+  border: 1px solid #e2e5eb;
+
+  padding: 25px;
+
+  border-radius: 8px;
+
+}
+
+.card h3 { color: var(--navy); }
+
+.icon { color: #b58b42; font-size: 28px; }
+
+.light { background: var(--light); }
+
+.loan-layout {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.2fr;
+
+  gap: 35px;
+
+  align-items: start;
+
+}
+
+form {
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 8px;
+
+  border: 1px solid #e2e5eb;
+
+}
+
+label { display: block; margin-top: 15px; font-weight: bold; font-size: 14px; }
+
+input, select, textarea {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 6px;
+
+  border: 1px solid #ccd2dc;
+
+  border-radius: 4px;
+
+  font: inherit;
+
+}
+
+textarea { min-height: 100px; }
+
+form button { margin-top: 20px; width: 100%; }
+
+.notice { font-size: 12px; color: #5d6675; }
+
+.status-box {
+
+  background: var(--navy);
+
+  color: white;
+
+  padding: 30px;
+
+  border-radius: 8px;
+
+}
+
+.status-box h2 { color: white; }
+
+footer {
+
+  background: #0a1324;
+
+  color: white;
+
+  padding: 35px 7%;
+
+  font-size: 13px;
+
+}
+
+footer a { color: var(--gold); }
+
+@media(max-width: 700px) {
+
+  header { align-items: flex-start; flex-direction: column; }
+
+  .loan-layout { grid-template-columns: 1fr; }
+
+  .hero { padding: 65px 7%; }
+
+  section { padding: 48px 6%; }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="brand">CRESTLINE <span>FINANCE</span></div>
+
+  <nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#about">About</a>
+
+    <a href="#services">Services</a>
+
+    <a href="#loans">Business Loans</a>
+
+    <a href="#status">Application Status</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+</header>
+
+<main>
+
+<section class="hero" id="home">
+
+  <p class="eyebrow">Business Finance & Advisory</p>
+
+  <h1>Capital for Your Vision. Support for Your Growth.</h1>
+
+  <p>
+
+    Explore business financing opportunities and financial advisory
+
+    services designed to help businesses and organisations plan
+
+    for sustainable growth.
+
+  </p>
+
+  <a class="button" href="#loans">Explore Business Financing</a>
+
+</section>
+
+<section id="about">
+
+  <p class="eyebrow">Who We Are</p>
+
+  <h2>Building Stronger Financial Futures</h2>
+
+  <p class="intro">
+
+    Crestline Corporate Finance aims to help businesses understand
+
+    their financing options, prepare funding applications, and
+
+    make informed decisions about their financial future.
+
+  </p>
+
+</section>
+
+<section class="light" id="services">
+
+  <p class="eyebrow">What We Offer</p>
+
+  <h2>Financial Services</h2>
+
+  <div class="cards">
+
+    <article class="card">
+
+      <div class="icon">01</div>
+
+      <h3>Business Financing</h3>
+
+      <p>Submit a business funding request for review and assessment.</p>
+
+    </article>
+
+    <article class="card">
+
+      <div class="icon">02</div>
+
+      <h3>Financial Advisory</h3>
+
+      <p>Explore financial planning and business growth strategies.</p>
+
+    </article>
+
+    <article class="card">
+
+      <div class="icon">03</div>
+
+      <h3>Growth Planning</h3>
+
+      <p>Plan for expansion, equipment, working capital, and new projects.</p>
+
+    </article>
+
+  </div>
+
+</section>
+
+<section id="loans">
+
+  <p class="eyebrow">Business Loans & Funding</p>
+
+  <h2>Request Business Financing</h2>
+
+  <p class="intro">
+
+    Tell us about your organisation and funding needs. Our team can
+
+    review your request and contact you about possible next steps.
+
+    Submitting an application does not guarantee funding or approval.
+
+  </p>
+
+  <div class="loan-layout">
+
+    <div>
+
+      <h3>Who can apply?</h3>
+
+      <p>Businesses, registered companies, and eligible organisations
+
+      seeking financial assistance for legitimate business purposes.</p>
+
+      <h3>What happens next?</h3>
+
+      <p>Applications can be assessed for completeness and eligibility.
+
+      Any funding offer depends on verification, applicable requirements,
+
+      and the availability of an appropriate funding source.</p>
+
+      <p class="notice">Do not submit passwords, PINs, or banking OTPs.</p>
+
+    </div>
+
+    <form id="loanForm">
+
+      <h3>Financing Application</h3>
+
+      <label for="company">Company or Organisation Name *</label>
+
+      <input id="company" name="company" required>
+
+      <label for="contactName">Contact Person *</label>
+
+      <input id="contactName" name="contactName" required>
+
+      <label for="email">Business Email *</label>
+
+      <input id="email" name="email" type="email" required>
+
+      <label for="phone">Contact Phone *</label>
+
+      <input id="phone" name="phone" type="tel" required>
+
+      <label for="country">Country *</label>
+
+      <input id="country" name="country" required>
+
+      <label for="amount">Funding Amount Requested *</label>
+
+      <input id="amount" name="amount" type="number" min="1" required>
+
+      <label for="purpose">Purpose of Financing *</label>
+
+      <select id="purpose" name="purpose" required>
+
+        <option value="">Select a purpose</option>
+
+        <option>Business expansion</option>
+
+        <option>Working capital</option>
+
+        <option>Equipment purchase</option>
+
+        <option>New project</option>
+
+        <option>Other business purpose</option>
+
+      </select>
+
+      <label for="details">Tell Us About Your Business *</label>
+
+      <textarea id="details" name="details" required></textarea>
+
+      <button class="button" type="submit">Submit Application</button>
+
+      <p class="notice">
+
+        This initial form is a website prototype. It does not yet
+
+        transmit or save applications. Secure submission and privacy
+
+        protections must be configured before accepting real applications.
+
+      </p>
+
+      <p id="formMessage" role="status"></p>
+
+    </form>
+
+  </div>
+
+</section>
+
+<section class="light" id="status">
+
+  <div class="status-box">
+
+    <p class="eyebrow">Application Tracking</p>
+
+    <h2>Check Your Application Status</h2>
+
+    <p>
+
+      A secure application-tracking service will be added when the
+
+      application database and private review dashboard are configured.
+
+    </p>
+
+    <p>Possible statuses: Pending Review, More Information Required,
+
+    Approved, or Declined.</p>
+
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <p class="eyebrow">Get in Touch</p>
+
+  <h2>Contact Crestline</h2>
+
+  <p>
+
+    Have questions about our proposed services? Contact our team
+
+    using the official business contact details once configured.
+
+  </p>
+
+  <p class="notice">
+
+    Official email, telephone, office address, and applicable
+
+    registration details will be added after verification.
+
+  </p>
+
+</section>
+
+</main>
+
+<footer>
+
+  <p><strong>CRESTLINE CORPORATE FINANCE</strong></p>
+
+  <p>Business finance and advisory.</p>
+
+  <p>All financing requests are subject to review and applicable requirements.</p>
+
+  <p>&copy; 2026 Crestline Corporate Finance. All rights reserved.</p>
+
+</footer>
+
+<script>
+
+document.getElementById("loanForm").addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  document.getElementById("formMessage").textContent =
+
+    "This prototype is not connected to a secure application system yet. Your information has not been sent or saved.";
+
+});
+
+</script>
+
+</body>
+
+</html>
